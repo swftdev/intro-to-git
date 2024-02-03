@@ -42,3 +42,19 @@ git status
 # now you can see the the working tree is clean with nothing new to commit
 ```
 
+## creating a branch
+```powershell
+# We would like to make a branch to work on
+# first we should ensure our local branch is up to date with changes from the remote
+git pull origin main
+# now if we see Already up to date. we know it's a good time to create a branch
+# to create a branch
+# git branch <branchname>
+git branch develop
+# check to make sure the branch was made, using
+git branch
+# now if you see you branch you can switch to it
+# git checkout <branchname>
+git checkout develop
+```
+
